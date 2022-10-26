@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    name = os.environ.get("Name", "World ! v2")
+    name = os.environ.get("Name", "World ! V2")
     return f"Hello {name}"
 
 def sum(a, b):
