@@ -8,6 +8,6 @@ steps:
 # Deploy container image to Cloud Run
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: gcloud
-  args: ['run', 'deploy', 'SERVICE-NAME', '--image', 'gcr.io/fluid-analogy-364409/flask-cicd-gcp', '--region', 'europe-west1']
+  args: ['run', 'deploy', 'flask-cicd-gcp', '--image', 'gcr.io/fluid-analogy-364409/flask-cicd-gcp', '--region', 'europe-west1']
 images:
 - gcr.io/fluid-analogy-364409/flask-cicd-gcp
